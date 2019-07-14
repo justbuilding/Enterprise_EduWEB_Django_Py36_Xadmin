@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import os
 import sys
-from message import views
+# from message import views
 
 if __name__ == "__main__":
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "xadmin_django.settings")
