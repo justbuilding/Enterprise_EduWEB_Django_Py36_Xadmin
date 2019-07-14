@@ -1,0 +1,14 @@
+问题
+manage.py@xadmin_django > makemigrations message
+"C:\Program Files\JetBrains\PyCharm 2018.3.3\bin\runnerw64.exe" C:\Users\Administrator\Anaconda3\envs\online_education-py36-Django19\python.exe "C:\Program Files\JetBrains\PyCharm 2018.3.3\helpers\pycharm\django_manage.py" makemigrations message D:/xadmin_django
+Tracking file by folder pattern:  migrations
+You are trying to add a non-nullable field 'object_id' to usermessage without a default; we can't do that (the database needs something to populate existing rows).
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows)
+ 2) Quit, and let me add a default in models.py
+Select an option: 
+
+解决
+object_id = models.CharField(max_length=200, primary_key=True, verbose_name=u"主键")
+自定义主键需要指定默认值
+object_id = models.CharField(max_length=200, default="", primary_key=True, verbose_name=u"主键")

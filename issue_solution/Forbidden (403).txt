@@ -1,0 +1,5 @@
+Forbidden (403)
+CSRF verification failed. Request aborted.
+
+html需要加验证
+在html里面的<form>标签加入{% csrf_token %}

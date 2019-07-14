@@ -1,0 +1,7 @@
+问题
+ERRORS:
+message.UserMessage.object_id: (mysql.E001) MySQL does not allow unique CharFields to have a max_length > 255.
+
+解决
+自定义的主键字段max_length不能超过255个字符
+object_id = models.CharField(max_length=200, default="", primary_key=True, verbose_name=u"主键")
