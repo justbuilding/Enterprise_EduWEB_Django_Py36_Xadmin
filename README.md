@@ -1,0 +1,3 @@
+# Enterprise_EduWEB_Django_Py36_Xadmin
+学习如何配置表单页面，orm和model设计
+以及对model的增删改查来把数据存入mysql和从mysql提取数据
