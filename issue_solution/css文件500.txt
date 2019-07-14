@@ -1,6 +1,0 @@
-django.core.exceptions.ImproperlyConfigured: The STATICFILES_DIRS setting should not contain the STATIC_ROOT setting
-
-错误原因有可能是在settings中静态文件目录设置的有问题
-
-STATIC_ROOT=os.path.join(BASE_DIR,"static/")#错误
-STATIC_ROOT=os.path.join(BASE_DIR,"/static/")#正确
